@@ -148,6 +148,8 @@ a{
 
     .btn-upgrade :hover {
         color:red;
+        background-size: 150%; 
+        transform: scale(1.5) translate(-100%, -100%);
         
     
     /* z-index: 99;
@@ -165,12 +167,6 @@ a{
   }
 
   
-
-  .btn-upgrade :hover {
-    background-size: 100%; 
-      
-  }
-    
 
 .icon{
     display: flex;
@@ -281,6 +277,43 @@ a{
     background-color: grey;
 }
 
+
+/* main-centrale */
+
+.menu-select{
+    width: 100%;
+    padding-top: 5em;
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.menu-select li{
+    display: inline-block;
+    padding: 2em;
+    line-height: 1em;
+}
+
+.menu-select li :hover{
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid green;
+}
+.container-music{
+    width: 100%;
+    margin-left: 10em;
+}
+
+.title{
+    margin-left: 10em;
+    display: block;   
+}
+
+.flex-img{
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-evenly;
+    
+}
 
 
 
