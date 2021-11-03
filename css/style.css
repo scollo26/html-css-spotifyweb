@@ -18,8 +18,8 @@ html{
 .inline-block{
     display: inline-block;
 }
-.width-10{
-    width: 10%;
+.width-20{
+    width: 20%;
 }
 .width-80{
     width: 80%;
@@ -44,6 +44,10 @@ html{
     font-size: 1.5em;
 }
 
+li a{
+    text-decoration: none;
+    
+}
 .container{
     width: 100%;
     height: calc(100vh - 100px);
