@@ -47,8 +47,12 @@ html{
 .margin-top{
     margin-top: 10px;
 }
+.margin-bottom{
+    margin-bottom: 10px;
+}
 
 .border-bottom{
+    padding: 0 0 1em 0;
     border-bottom: 1px solid grey;
 }
 
@@ -78,21 +82,23 @@ html{
     color: grey;
 }
 
-li a{
+a{
     text-decoration: none;
-    
+    color: grey; 
 }
+
 .container{
     width: 100%;
     height: calc(100vh - 100px);
     display: flex;
     overflow: hidden;
-    /* background-color: aqua; */
 }
 
 .col-left{
+    z-index: 5;
+    position: fixed;
     width: 200px;
-    height: 100%;
+    height: calc(100vh - 100px);
     padding: 1em 0 0 1em;
     display: flex;
     flex-direction: column;
@@ -101,7 +107,7 @@ li a{
 }
 
 .col-center{
-    width: 100%;
+    width: 100% ;
     height: 100%;
     background-color: #141922;
 }
@@ -115,6 +121,7 @@ li a{
 }
 
 .btn-upgrade{
+    
     z-index: 99;
     display: inline-block;
     position: absolute;
@@ -123,14 +130,15 @@ li a{
     width: 200px;
     height: 40px;
     border: 1px solid white;
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(0,0,0, 0.1);
     border-radius: 20px;
     color: #FFF;
     
   }
+
   
 
-  .btn-upgrade :hover{
+  .btn-upgrade :hover {
     transform: scale(5em); 
       
   }
@@ -192,16 +200,19 @@ li a{
     margin: 10px;
 }
 
-.menu-playlist ul li a{
-    color: grey;
-}
 .menu-playlist ul  :hover a {
     color: white;
 }
 
+.container-bottom   :hover a {
+    color: white;
+}
+
+
 
 .container-bottom{
     color: white;
+    margin-left: 10px;
 }
 
 
@@ -217,6 +228,7 @@ li a{
 
 /* inizio-footer */
 .bar-footer{
+    z-index: 7;
     position: sticky;
     width: 100%;
     height: 100px;
