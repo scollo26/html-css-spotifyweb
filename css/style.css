@@ -25,10 +25,30 @@ html{
     width: 80%;
 }
 
+.height-300{
+    min-height: 300px;
+}
+
+.font-40{
+    font-size: 40px;
+}
+
+
+.vertical-center{
+    vertical-align: super;
+}
+
+.margin-top{
+    margin-top: 10px;
+}
+
 .float-left{
     float: left;
 }
 
+.overflow{
+    overflow: auto;
+}
 .clearfix::after{
     content: '';
     display: table;
@@ -44,6 +64,10 @@ html{
     font-size: 1.5em;
 }
 
+.grey{
+    color: grey;
+}
+
 li a{
     text-decoration: none;
     
@@ -56,7 +80,7 @@ li a{
 }
 
 .col-left{
-    width: 10%;
+    width: 200px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -72,8 +96,8 @@ li a{
 
 .header-main{
     width: 100%;
-    height: 10%;
-    position: sticky;
+    height: 100px;
+    position: fixed;
     top: 0%;
     background-color: rgba(0,0,0, 0.5);
 }
@@ -95,7 +119,7 @@ li a{
   
 
   .btn-upgrade :hover{
-      padding: 2em;
+    transform: scale(5em); 
       
   }
     
@@ -111,8 +135,9 @@ li a{
     width: 70%;
 }
 
-.container-icon{
+.container-top{
     display: flex;
+    margin-left: 10px;
 }
 
 .menu-icon{
@@ -120,27 +145,47 @@ li a{
     line-height: 2em;
     width: 100%;
     margin-top: 2em;
-    color: white;
-    /* filter: invert(1); */
+    display: flex;
+    flex-direction: column;
+        /* filter: invert(1); */
 }
-.container-icon .menu-icon i{
-    color: white;
+.container-top .menu-icon i{
+    color: grey;
 }
 
-.menu-icon li a :hover{
+.container-center  i{
+    color: grey;
+
+}
+
+.menu-icon li  :hover a{
     /* padding-left: 1em; */
     border-left: 1px solid rgb(196, 21, 21);
+    color: white;
+}
+.menu-icon li  :hover span{
+    color: white;
 }
 
 
-.menu-icon li{
+.menu-icon li span{
     justify-content: center;
+    color: grey;
+
 }
 
 
+.container-center{
+    color: white;
+    margin: 10px;
+}
 
-
-
+.menu-playlist ul li a{
+    color: grey;
+}
+.menu-playlist ul  :hover a {
+    color: white;
+}
 
 
 
@@ -153,6 +198,7 @@ li a{
 
 /* inizio-footer */
 .bar-footer{
+    position: sticky;
     width: 100%;
     height: 100px;
     background-color: #282828;
