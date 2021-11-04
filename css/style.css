@@ -57,7 +57,7 @@ html{
 }
 
 .marg-left{
-    margin-left: 2em;
+    margin-left: 10px;
 }
 
 .border-bottom{
@@ -128,6 +128,7 @@ a{
     width: 100% ;
     height: 100%;
     background-color: #141922;
+    overflow: auto;
 }
 
 .header-main{
@@ -147,7 +148,7 @@ a{
     display: inline-block;
     position: absolute;
     top: 15px;
-    left: 80%;
+    left: 70%;
     width: 200px;
     height: 40px;
     border: 1px solid white;
@@ -163,10 +164,9 @@ a{
     }
 
     .btn-upgrade :hover, .btn-upgrade :focus   {
-        /* transform: scale(1);
-        padding: 12px 22px; */
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);
+    transform: scale(1);
+    padding: 12px 22px;
+  
 }
     
 
@@ -203,11 +203,11 @@ a{
 
 }
 
-/* .menu-icon li  :hover a{
+.menu-icon li  :hover a{
     padding-left: 1em;
     border-left: 1px solid rgb(8, 214, 53);
     color: white;
-} */
+}
 .menu-icon li  :hover span{
     color: white;
 }
@@ -301,7 +301,7 @@ a{
 
 .menu-select li{
     display: inline-block;
-    padding: 2em;
+    padding: 2em 1em;
     line-height: 1em;
 }
 
@@ -324,13 +324,17 @@ a{
 }
 
 
-.container-music .flex img{
-    width: 80%;
+.container-music .flex .inline-block{
+    width: 13%;
     height: auto;
+    text-align: center;
+    
 }
 
-.container-music .flex{
-   text-align: center;
+
+
+.container-music .flex img{
+    max-width: 90%;
 }
 
 
@@ -343,10 +347,20 @@ a{
 
 .container-music .flex span{
     color: grey;
+    
+   
+}
+
+.container-music  span{
+    color: grey;
+    
    
 }
 
 
+.border-radius{
+    border-radius: 50%;
+}
 
 
 /* inizio-footer */
@@ -361,7 +375,44 @@ a{
 
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1024px){
+
+    .btn-upgrade{
+        left: 50%;
+ 
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .container-music .flex{
+        width: 100%;  
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+    .container-music .flex .inline-block{
+        width: 30%;    
+    }
+
+    .btn-upgrade{
+        left: 50%;
+ 
+    }
+    .inline-block{
+        width: 50%;
+        margin: 0%;
+    }
+    .container img{
+        width: 50%;
+    }
+
+    .container-music img{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 425px) {
     .col-left{
         z-index: 5;
         width: 50px;
@@ -374,14 +425,15 @@ a{
         background-color: black;
         
     }
-
-    .icon{
-        padding-left: 10px;
+    .btn-upgrade{
+        left: 25%;
+ 
     }
 
     .container-music .flex{
         width: 100%;  
         flex-wrap: wrap;
+        margin: 0px;
     }
 
    .container span
@@ -393,7 +445,7 @@ a{
 
    }
    .container img{
-       width: 1em;
+       width: 80%;
    }
    .container-center h4, 
    .margin-top i{
@@ -409,8 +461,12 @@ a{
        padding-top: 5em;
 
    }
+   .container-music .flex .inline-block{
+    width: 50%; 
+   }  
+   
+   .container-bottom{
+       margin: 0%;
+   }
+}
 
-}  
- 
-    
-    
