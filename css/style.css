@@ -386,21 +386,26 @@ a{
 
 
 .play{
-    position: absolute;
-    top: 30%;
-    left: 5%;
+   
     font-size: 3em;
     color: white;
     display: none;
+    position: absolute;
+    top: 30%;
+    left: 5%;
 }
 
 
-.inline-block:hover .play {
+.larg:hover .play {
     display: block;
     background-color: rgba(0,0,0, 0.5);
+    
 }
 
-
+.larg{
+    width: 100%;
+    height: 100%;
+}
 
 
 
