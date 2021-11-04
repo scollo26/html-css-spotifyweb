@@ -56,6 +56,10 @@ html{
     margin-bottom: 10px;
 }
 
+.marg-left{
+    margin-left: 2em;
+}
+
 .border-bottom{
     padding: 0 0 1em 0;
     border-bottom: 1px solid grey;
@@ -109,16 +113,18 @@ a{
 
 .col-left{
     z-index: 5;
-    position: fixed;
-    width: 200px;
+    float: left;
+    width: 230px;
     height: calc(100vh - 100px);
-    padding: 1em 0 0 1em;
+    padding: 1em 1em 1em 1em;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     background-color: black;
 }
 
 .col-center{
+    float: left;
     width: 100% ;
     height: 100%;
     background-color: #141922;
@@ -134,25 +140,10 @@ a{
 
 /* bottone */
 
-.btn-upgrade{
-    position: absolute;
-    top: 15px;
-    left: 80%;
-    align-items: center;
-    color: white;
-    background-color: rgba(0,0, 0, 0.5);
-    border-radius: 500px;
-    padding: 17px 48px;
-    
-    }
 
-    .btn-upgrade :hover {
-        color:red;
-        background-size: 150%; 
-        transform: scale(1.5) translate(-100%, -100%);
-        
-    
-    /* z-index: 99;
+.btn-upgrade{
+
+    z-index: 99;
     display: inline-block;
     position: absolute;
     top: 15px;
@@ -162,9 +153,22 @@ a{
     border: 1px solid white;
     background-color: rgba(0,0,0, 0.1);
     border-radius: 20px;
-    color: #FFF; */
+    cursor: pointer;
+    padding-top: 8px;
+    text-align: center;
+    color: #FFF;
+
+
     
-  }
+    }
+
+    .btn-upgrade :hover, .btn-upgrade :focus   {
+        /* transform: scale(1);
+        padding: 12px 22px; */
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+    
 
   
 
@@ -199,11 +203,11 @@ a{
 
 }
 
-.menu-icon li  :hover a{
+/* .menu-icon li  :hover a{
     padding-left: 1em;
     border-left: 1px solid rgb(8, 214, 53);
     color: white;
-}
+} */
 .menu-icon li  :hover span{
     color: white;
 }
@@ -223,7 +227,7 @@ a{
 }
 
 .menu-playlist{
-    height: calc(100vh - 500px);
+    height: calc(100vh - 600px);
     overflow-y: auto;
 }
 
@@ -250,6 +254,13 @@ a{
 
 
 /* hover-colonna-left */
+
+.container-center  :hover i{
+    color: white;
+}
+.container-center  :hover span{
+    color: white;
+}
 
 .menu-playlist ul  :hover a {
     color: white;
@@ -298,22 +309,43 @@ a{
     padding-bottom: 0.5em;
     border-bottom: 1px solid green;
 }
+
+.menu-select ul :hover a{
+    color: white;
+}
 .container-music{
     width: 100%;
-    margin-left: 10em;
+    
 }
 
 .title{
-    margin-left: 10em;
+    
     display: block;   
 }
 
-.flex-img{
-    margin: 0 auto;
-    width: 90%;
-    justify-content: space-evenly;
-    
+
+.container-music .flex img{
+    width: 80%;
+    height: auto;
 }
+
+.container-music .flex{
+   text-align: center;
+}
+
+
+
+.container-music .flex h4{
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.container-music .flex span{
+    color: grey;
+   
+}
+
 
 
 
@@ -325,3 +357,60 @@ a{
     height: 100px;
     background-color: #282828;
 }
+
+
+
+
+@media screen and (max-width: 550px) {
+    .col-left{
+        z-index: 5;
+        width: 50px;
+        height: calc(100vh - 100px);
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        
+    }
+
+    .icon{
+        padding-left: 10px;
+    }
+
+    .container-music .flex{
+        width: 100%;  
+        flex-wrap: wrap;
+    }
+
+   .container span
+   {
+       display: none;
+   }
+   .menu-playlist a{
+       display: none;
+
+   }
+   .container img{
+       width: 1em;
+   }
+   .container-center h4, 
+   .margin-top i{
+       display: none;
+   }
+
+   .margin-top svg{
+       width: 1em;
+   }
+
+   .menu-select{
+       width: 100%;
+       padding-top: 5em;
+
+   }
+
+}  
+ 
+    
+    
