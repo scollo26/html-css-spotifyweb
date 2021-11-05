@@ -408,12 +408,12 @@ a{
     display: inline-block;
     font-size: 3em;
     color: white;
-    display: none;
+    /* display: none; */
     position: absolute;
-    width: 95%;
+    width: 90%;
     height: 100%;
     top: 0%;
-    left: 0%;
+    left: 5%;
 }
 
 
@@ -504,7 +504,7 @@ footer {
     border-radius: 50px;
     background-color: white;
 }
-
+/* cerchio-barra-music */
 .bar-up{
     position: absolute;
     right: 0;
