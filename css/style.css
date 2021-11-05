@@ -444,11 +444,6 @@ a{
 }
 
 
-
-
-
-
-
 /* inizio-footer */
 
 footer {
@@ -511,7 +506,9 @@ footer {
     border-radius: 50px;
     background-color: white;
 }
+
 /* cerchio-barra-music */
+
 .bar-up{
     position: absolute;
     right: 0;
