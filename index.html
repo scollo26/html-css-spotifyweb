@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- inizio-main -->
+    <!-- inizio-colonna-left -->
     <main>
         <div class="container clearfix ">
             <div class="col-left relative">
@@ -60,7 +60,7 @@
 
                 <div class="container-center ">
                     <h4>Playlist</h4>
-                    <div class="margin-top">
+                    <div id="plus" class="margin-top">
                         <i class="font-40 fas fa-plus-square"></i>
                         <span class="grey inline-block vertical-center">Crea Playlist </span> 
                     </div>
@@ -92,11 +92,10 @@
                         
                     </div>
                 </div>
-               
-
-                
-
             </div>
+
+            <!-- colonna-right-main -->
+
             <div class="col-center ">
                 <div class="header-main ">
                     <div class="upgrade">
@@ -108,6 +107,7 @@
 
                 <!-- main-centrale -->
 
+                <!-- menu-main -->
                 <div class="menu-select">
                     <ul>
                         <li>
@@ -264,9 +264,6 @@
                     
 
                 </div>
-                
-
-
             </div>
 
         </div>
@@ -274,51 +271,91 @@
 
     </main>
     <!-- inizio-footer -->
+
+    <!-- colonna-left -->
+
     <footer class="clearfix">
-        <div class="width-25 inline-block float-left ">
-                <div class="inline-block  " >
+        <div id="col-left" class="width-25 inline-block float-left footer-left ">
+                <div class="inline-block marg-left " >
                     <img class="width-50px" src="img/sinister.jpeg" alt="">
                 </div>
-                <div class="inline-block marg-left vertical-super">
+                <div id="title" class="inline-block marg-left vertical-super">
                     <div class="block">
-                        sinister
+                        Sinister
                     </div>
                     <div class="block grey font-07">
                         brano nome
                     </div>
                 </div>
-                <div class="inline-block marg-left vertical-super">
-                    <i class="far fa-heart"></i>
+                <div class="heart inline-block marg-left vertical-super">
+                    <a href="#"><i class="far fa-heart"></i></a> 
                 </div>
-                <div class="inline-block marg-left vertical-super">
-                    <i class="far fa-folder"></i>
+                <div class="folder inline-block marg-left vertical-super">
+                    <a href="#"> <i class="far fa-folder"></i></a> 
                 </div>
                 
         </div>
 
-        <div class="width-50 inline-block float-left">
+        <!-- colonna-center -->
+
+        <div class="col-centrale width-50 inline-block float-left">
             <div class="container-player">
-                <div class="player-music">
+                <div class="player-music margin-top">
                     <div class="inline-block">
-                        <i class="fas fa-exchange-alt"></i>
+                        <i class="fas fa-random"></i>
                     </div>
                     <div class="inline-block padding-l-r">
-                        <i class="fas fa-chevron-left"></i>
+                        <i class="border-left fas fa-caret-left"></i>
                     </div>
-                    <div class="inline-block">
-                        <i class="far fa-play-circle"></i>
+                    <div  class="inline-block">
+                        <i id="play" class="far fa-play-circle"></i>
                     </div>
                     <div class="inline-block padding-l-r">
-                        <i class="fas fa-chevron-right"></i>
+                        <i class="border-right fas fa-caret-right"></i>
                     </div>
+                    <div class="inline-block">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                </div>
+                <div class=" bar margin-top al">
+                    <span>
+                        0.25
+                    </span>
+                    <div class="bar-player inline-block ">
+                        <div class="bar-player-inside inline-block ">
+                            <div class="bar-up">
+
+                            </div>
+                        </div>
+                    </div>
+                    <span>
+                        4.35
+                    </span>
+                    
+                    
+
                 </div>
 
             </div>
         </div>
 
-        <div class="width-25 inline-block float-right">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quis amet maiores nihil saepe sunt excepturi odit? Nam, ut optio facere quasi voluptate quas. Ducimus aliquam accusantium odit quos iure?
-        </div>
+        <!-- colonna-right -->
+
+        <div id="col-right" class=" width-25 inline-block float-right"> 
+            <div class="bar-2 inline-block">
+                <i class="fas fa-list"></i>
+                <i class="marg-left fas fa-desktop"></i>
+                <i class="marg-left fas fa-volume-up"></i>
+                <div class="marg-left bar-player inline-block  ">
+                    <div class="bar-player-inside inline-block relative">
+                        <div class="bar-up">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
 
     </footer>
 </body>
