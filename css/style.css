@@ -31,6 +31,13 @@ html{
     width: 20%;
     background-color: skyblue;
 }
+
+.width-25{
+    width: 25%;
+    background-color: skyblue;
+}
+
+
 .width-50{
     width: 50%;
     background-color: slateblue;
@@ -61,7 +68,12 @@ html{
 .marg-left{
     margin-left: 10px;
 }
-
+.marg-right{
+    margin-right: 10px;
+}
+.padding-l-r{
+    padding: 0 2em;
+}
 .border-bottom{
     padding: 0 0 1em 0;
     border-bottom: 1px solid grey;
@@ -69,6 +81,9 @@ html{
 
 .float-left{
     float: left;
+}
+.float-right{
+    float: right;
 }
 
 .overflow{
@@ -411,8 +426,17 @@ a{
 }
 
 
+.container-player{
+    width: 100%;
+    height: 100px;
+}
 
-
+.player-music{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 1.3em;
+}
 
 
 
