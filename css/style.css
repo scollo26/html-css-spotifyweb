@@ -37,6 +37,9 @@ html{
    
 }
 
+.width-50px{
+    width: 50px;
+}
 
 .width-50{
     width: 50%;
@@ -52,6 +55,10 @@ html{
 
 
 .vertical-center{
+    vertical-align: super;
+}
+
+.vertical-super{
     vertical-align: super;
 }
 
@@ -408,7 +415,7 @@ a{
     display: inline-block;
     font-size: 3em;
     color: white;
-    /* display: none; */
+    display: none;
     position: absolute;
     width: 90%;
     height: 100%;
@@ -561,17 +568,6 @@ footer {
     width: 30%;
 }
 
-
-.altezza{
-    height: 90px;
-}
-
-.width-50px{
-    width: 50px;
-}
-.vertical-super{
-    vertical-align: super;
-}
 .font-07{
     font-size: 0.7em;
 }
@@ -696,6 +692,10 @@ footer {
         
     }
 
+    .container-top{
+        width: 40px;
+    }
+
     .container-music .flex{
         width: 100%;  
         flex-wrap: wrap;
@@ -723,33 +723,34 @@ footer {
    }
 
    .menu-select{
-       width: 100%;
-       padding-top: 5em;
+        width: 100%;
+        padding-top: 5em;
+    }
 
-   }
    .container-music .flex .inline-block{
     width: 50%; 
-   }  
+    }  
    
    .container-bottom{
        margin: 0%;
-   }
+    }
 
    #col-left {
     width: 25%;
-}
+    }
 
-#col-left .heart, .folder {
+ #col-left .heart, .folder {
+     width: 25%;
+     margin-right: 5px;
+    }
+
+ #col-right {
     width: 25%;
-}
+    }
 
-#col-right {
-    width: 25%;
-}
-
-.bar-2{
+ .bar-2{
     width: 100%;
-}
+    }
 }
 
 
